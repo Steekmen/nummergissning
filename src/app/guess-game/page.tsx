@@ -42,9 +42,9 @@ const GuessGame = () => {
         setAttempts(attempts + 1); // Increase number of attempts
 
         if (guess < randomNumber) {
-            setFeedback("It's too little!");
+            setFeedback("It&quot;s too little!");
         } else if (guess > randomNumber) {
-            setFeedback("It's too much!");
+            setFeedback("It&quot;s too much!");
         } else {
             setFeedback(`Congratulations, ${userName} you guessed number: ${randomNumber} in ${attempts + 1} attempts.`);
             setGameStarted(false); // Resetting game
