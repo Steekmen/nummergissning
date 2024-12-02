@@ -42,9 +42,9 @@ const GuessGame = () => {
         setAttempts(attempts + 1); // Increase number of attempts
 
         if (guess < randomNumber) {
-            setFeedback("It&quot;s too little!");
+            setFeedback('Its too little!');
         } else if (guess > randomNumber) {
-            setFeedback("It&quot;s too much!");
+            setFeedback('Its too much!');
         } else {
             setFeedback(`Congratulations, ${userName} you guessed number: ${randomNumber} in ${attempts + 1} attempts.`);
             setGameStarted(false); // Resetting game
@@ -61,8 +61,8 @@ const GuessGame = () => {
                 <div>
                     <h1>Enter your name</h1>
                     <input
-                        type="text"
-                        placeholder="Your name"
+                        type='text'
+                        placeholder='Your name'
                         value={userName}
                         onChange={handleNameChange}
                         style={{ padding: '10px', fontSize: '16px', marginBottom: '20px' }}
@@ -89,10 +89,10 @@ const GuessGame = () => {
                     <h1>Hello, {userName}!</h1>
                     <p>{feedback}</p>
                     <input
-                        type="number"
+                        type='number'
                         value={userGuess}
                         onChange={handleInputChange}
-                        placeholder="Enter number"
+                        placeholder='Enter number'
                         style={{
                             padding: '10px',
                             fontSize: '16px',
